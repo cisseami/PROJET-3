@@ -604,7 +604,8 @@ header{
                         color: $cd-tertiaire;
                         background-color: white;
                         border-radius: 75px;
-                        font-size: 45px;
+                        font-size: 30px;
+                        padding: 0.5rem;
                     }
 
 
@@ -707,7 +708,7 @@ header{
 /*@media screen and (min-width: 1280px) and (max-width: 768px)*/
 
 
-@media screen and (min-width: 1280px) and (max-width: 1500px){
+@media screen and (min-width: 1000px) and (max-width: 1200px){
 
     .conteneur {
         display: flex;
