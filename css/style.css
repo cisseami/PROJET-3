@@ -1,7 +1,6 @@
 .heart {
   font-size: 30px;
   position: relative;
-  /*scale: 1;*/
   transform: scale(1.1);
   transition-property: transform;
   transition-duration: 4s;
@@ -311,7 +310,7 @@ header .back {
 /* Section Image */
 .meetpic {
   width: 100%;
-  height: 250px;
+  height: 270px;
   object-fit: cover;
   max-height: 30rem;
   position: relative;
@@ -457,7 +456,8 @@ header .back {
   color: #99E2D0;
   background-color: white;
   border-radius: 75px;
-  font-size: 45px;
+  font-size: 30px;
+  padding: 0.5rem;
 }
 .carte .order {
   display: flex;
@@ -528,10 +528,18 @@ header .back {
   }
 }
 /*@media screen and (min-width: 1280px) and (max-width: 768px)*/
-@media screen and (min-width: 1280px) and (max-width: 1500px) {
-  .conteneur {
+@media screen and (min-width: 1023px) and (max-width: 1400px) {
+  .carte .conteneur {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+  .carte .conteneur .food {
+    width: 319px !important;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .food {
+    width: 95% !important;
   }
 }
 
