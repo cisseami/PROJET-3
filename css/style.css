@@ -536,10 +536,25 @@ header .back {
   .carte .conteneur .food {
     width: 319px !important;
   }
+  .cards {
+    flex-flow: wrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+  }
+  .cards .card {
+    margin-bottom: 1.5rem !important;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .food {
     width: 95% !important;
+  }
+  .cards {
+    flex-flow: wrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around;
   }
 }
 

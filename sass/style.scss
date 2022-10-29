@@ -724,6 +724,18 @@ header{
         }
     }
 
+    .cards {
+        flex-flow: wrap !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around !important;
+
+
+        .card{
+            margin-bottom: 1.5rem !important;
+        }
+    }
+
 }
 
 
@@ -733,4 +745,12 @@ header{
     .food{
         width: 95% !important;
     }
+
+    .cards {
+        flex-flow: wrap !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-around;
+    }
+
 }
