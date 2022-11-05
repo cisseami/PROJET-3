@@ -11,13 +11,13 @@ $cd-tertiaire : #99E2D0;
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 4s;
-    &:hover .coeurgradient {
+    &:active .coeurgradient {
         opacity: 1;
         transform :scale(1.1);
         transition: opacity 2s;
     }
 
-    &:hover .coeurose {
+    &:active .coeurose {
         opacity: 1;
         transform: scale(1.1);
         transition: opacity 2s;
@@ -526,14 +526,12 @@ header{
                     margin-right: 0;
                 }
 
-                
                 &:active i {
                         
                     animation-name: turn;
                     animation-duration: 1s;
                     animation-iteration-count: initial;
                 }
-
 
                
 
@@ -712,6 +710,22 @@ header{
 
 @media screen and (min-width: 1023px) and (max-width: 1400px) {
 
+    .heart{
+        
+        &:hover .coeurgradient {
+            opacity: 1;
+            transform :scale(1.1);
+            transition: opacity 2s;
+        }
+    
+        &:hover .coeurose {
+            opacity: 1;
+            transform: scale(1.1);
+            transition: opacity 2s;
+        }
+    
+    }
+
     .carte{
 
         .conteneur {
@@ -720,6 +734,17 @@ header{
 
             .food{
                 width: 319px !important;
+
+                &:hover .check{
+                    margin-right: 0 !important;
+                }
+
+                &:hover i {
+                        
+                    animation-name: turn !important;
+                    animation-duration: 1s !important;
+                    animation-iteration-count: initial !important;
+                }
             }
 
         
@@ -738,15 +763,41 @@ header{
         }
     }
 
-
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
 
+    .heart{
+    
+        &:hover .coeurgradient {
+            opacity: 1;
+            transform :scale(1.1);
+            transition: opacity 2s;
+        }
+    
+        &:hover .coeurose {
+            opacity: 1;
+            transform: scale(1.1);
+            transition: opacity 2s;
+        }
+    
+    }
+
     .food{
         width: 95% !important;
+
+        &:hover .check{
+            margin-right: 0 !important;
+        }
+
+        &:hover i {
+                
+            animation-name: turn !important;
+            animation-duration: 1s !important;
+            animation-iteration-count: initial !important;
+        }
     }
 
     .cards {
