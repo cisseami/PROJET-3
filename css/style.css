@@ -519,7 +519,7 @@ header .back {
   }
 }
 /* version desktop*/
-@media screen and (min-width: 1023px) and (max-width: 1400px) {
+@media screen and (min-width: 1023px) {
   .heart:hover .coeurgradient {
     opacity: 1;
     transform: scale(1.1);
