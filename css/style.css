@@ -5,12 +5,12 @@
   transition-property: transform;
   transition-duration: 4s;
 }
-.heart:hover .coeurgradient {
+.heart:active .coeurgradient {
   opacity: 1;
   transform: scale(1.1);
   transition: opacity 2s;
 }
-.heart:hover .coeurose {
+.heart:active .coeurose {
   opacity: 1;
   transform: scale(1.1);
   transition: opacity 2s;
@@ -133,6 +133,9 @@ header h1 {
   padding-top: 1rem;
   font-weight: bold;
 }
+.location i {
+  padding-right: 1rem;
+}
 .location .city {
   font-size: 1rem;
 }
@@ -227,11 +230,9 @@ header h1 {
 }
 
 .card {
-  width: 100%;
-  height: auto;
   border-radius: 20px;
   height: 250px;
-  width: 340px;
+  width: 97%;
   background-color: white;
   margin-top: 1.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
@@ -340,7 +341,7 @@ header .back {
   font-family: "Shrikhand", cursive;
   margin: 0;
   font-style: italic;
-  font-size: 26px;
+  font-size: 24px;
   z-index: 100;
 }
 .carte .conteneur {
@@ -393,10 +394,10 @@ header .back {
   height: 86px;
   overflow: hidden;
 }
-.carte .conteneur .band .food:hover .check {
+.carte .conteneur .band .food:active .check {
   margin-right: 0;
 }
-.carte .conteneur .band .food:hover i {
+.carte .conteneur .band .food:active i {
   animation-name: turn;
   animation-duration: 1s;
   animation-iteration-count: initial;
@@ -464,6 +465,7 @@ header .back {
   justify-content: center;
 }
 
+/* Apparition progressive des plats */
 @keyframes co1 {
   0% {
     transform: scale(0);
@@ -516,25 +518,35 @@ header .back {
     transform: rotate(1turn);
   }
 }
-@keyframes plats {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-/*@media screen and (min-width: 1280px) and (max-width: 768px)*/
+/* version desktop*/
 @media screen and (min-width: 1023px) and (max-width: 1400px) {
+  .heart:hover .coeurgradient {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: opacity 2s;
+  }
+  .heart:hover .coeurose {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: opacity 2s;
+  }
+  .carte .topic h2 {
+    font-size: 26px;
+  }
   .carte .conteneur {
     display: flex;
     justify-content: space-around;
   }
   .carte .conteneur .food {
     width: 319px !important;
+  }
+  .carte .conteneur .food:hover .check {
+    margin-right: 0 !important;
+  }
+  .carte .conteneur .food:hover i {
+    animation-name: turn !important;
+    animation-duration: 1s !important;
+    animation-iteration-count: initial !important;
   }
   .cards {
     flex-flow: wrap !important;
@@ -544,17 +556,61 @@ header .back {
   }
   .cards .card {
     margin-bottom: 1.5rem !important;
+    width: 340px !important;
+    height: 250px !important;
+  }
+  .cards .card img {
+    width: 340px !important;
+    height: 175px !important;
+  }
+  .cards .card .describ {
+    width: 340px !important;
+    height: 81.4px !important;
   }
 }
+/* Version tablette*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .heart:hover .coeurgradient {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: opacity 2s;
+  }
+  .heart:hover .coeurose {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: opacity 2s;
+  }
   .food {
     width: 95% !important;
+  }
+  .food:hover .check {
+    margin-right: 0 !important;
+  }
+  .food:hover i {
+    animation-name: turn !important;
+    animation-duration: 1s !important;
+    animation-iteration-count: initial !important;
   }
   .cards {
     flex-flow: wrap !important;
     display: flex !important;
     align-items: center !important;
     justify-content: space-around;
+  }
+  .cards .card {
+    width: 340px !important;
+    height: 250px !important;
+  }
+  .cards .card img {
+    width: 340px !important;
+    height: 175px !important;
+  }
+  .cards .card .describ {
+    width: 340px !important;
+    height: 81.4px !important;
+  }
+  .carte .topic h2 {
+    font-size: 26px;
   }
 }
 
