@@ -9,16 +9,30 @@ $cd-secondaire: #FF79DA;
 $cd-tertiaire : #99E2D0; 
 
 
+
+@keyframes co4 {
+    0% { transform: scale(0);}
+
+    50% { transform: scale(0.5);}
+
+    100% { transform: scale(1); }
+}
+
+
 .heart{
     font-size: 30px;
     position: relative;
     transform: scale(1.1);
     transition-property: transform;
-    transition-duration: 4s;
+    transition-duration: 2s;
+    
     &:hover .coeurgradient {
+        animation-name: co4;
+        animation-duration: 2s;
+        animation-iteration-count: initial;
         opacity: 1;
         transform : scale(1.1);
-        transition: opacity 2s;
+        transition:  opacity 2s;
 
     }
 
