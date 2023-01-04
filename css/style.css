@@ -16,23 +16,23 @@
   position: relative;
   transform: scale(1.1);
   transition-property: transform;
-  transition-duration: 2s;
+  transition-duration: 1.5s;
 }
 .heart:hover .coeurgradient {
   animation-name: co4;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: initial;
   opacity: 1;
   transform: scale(1.1);
-  transition: opacity 2s;
+  transition: opacity 0.5s;
 }
 .heart:hover .coeurose {
   animation-name: co4;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: initial;
   opacity: 1;
   transform: scale(1.1);
-  transition: opacity 2s;
+  transition: opacity 0.5s;
 }
 
 .coeuracc {
