@@ -17,7 +17,7 @@ $cd-tertiaire : #99E2D0;
     transition-duration: 4s;
     &:hover .coeurgradient {
         opacity: 1;
-        transform :scale(1.1);
+        transform : scale(1.1);
         transition: opacity 2s;
 
     }
@@ -98,8 +98,13 @@ body {
     color: $cd-primaire;
 }
 
-.transit{
+/*.transit{
     background-color: #E6E6F0;
+}*/
+
+
+.transit{
+    background-color:  #E6E6FA;
 }
 
 .light{
@@ -458,6 +463,7 @@ header{
             font-size: 25px;
             z-index: 100;
             padding-left: 0.2px;
+            font-style: oblique;
         }
 
     }
