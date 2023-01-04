@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@keyframes sw {
+  0% {
+    transform: height(0%);
+  }
+  50% {
+    transform: height(50%);
+  }
+  100% {
+    transform: height(100%);
+  }
+}
 .heart {
   font-size: 30px;
   position: relative;
@@ -7,12 +18,12 @@
   transition-property: transform;
   transition-duration: 4s;
 }
-.heart:active .coeurgradient {
+.heart:hover .coeurgradient {
   opacity: 1;
   transform: scale(1.1);
   transition: opacity 2s;
 }
-.heart:active .coeurose {
+.heart:hover .coeurose {
   opacity: 1;
   transform: scale(1.1);
   transition: opacity 2s;
@@ -32,6 +43,7 @@
   -webkit-text-fill-color: transparent;
   position: relative;
   opacity: 0;
+  transition: all 0.3s linear 0s;
 }
 
 .coeurclear {
@@ -108,8 +120,8 @@ body {
 }
 .catch:hover {
   transform: scale(1);
-  box-shadow: 8px 8px 11px 12px rgba(0, 0, 0, 0.33);
-  background: linear-gradient(17deg, pink, #9356dc);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.57);
+  background: linear-gradient(230deg, #FF79DA 34%, #9356dc 111%);
 }
 
 /* Page d'accueil */
@@ -171,7 +183,7 @@ header h1 {
   margin-bottom: 4rem;
 }
 .welcome h2 {
-  margin-left: 1.5rem;
+  margin-left: 16px;
   margin-top: 2rem;
   font-weight: bold;
 }
@@ -211,14 +223,12 @@ header h1 {
 /* Section Restaurants */
 .menu {
   background-color: #F2F2F2;
-  padding-right: 15px;
-  padding-left: 15px;
   padding-bottom: 4rem;
   padding-top: 2rem;
 }
 .menu h2 {
   font-weight: bold;
-  margin-left: 0.5rem;
+  margin-left: 16px;
 }
 
 .cards {
@@ -234,7 +244,7 @@ header h1 {
 .card {
   border-radius: 20px;
   height: 250px;
-  width: 97%;
+  width: 90%;
   background-color: white;
   margin-top: 1.5rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
@@ -264,13 +274,13 @@ header h1 {
   justify-content: space-between;
 }
 .card .describ h3 {
-  margin-top: 9px;
+  margin-top: 8px;
   margin-left: 13px;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: bold;
 }
 .card .describ p {
-  margin-top: -5px;
+  margin-top: -6px;
   margin-left: 13px;
   font-size: 18px;
 }
@@ -342,9 +352,9 @@ header .back {
 .carte .topic h2 {
   font-family: "Shrikhand", cursive;
   margin: 0;
-  font-style: italic;
-  font-size: 24px;
+  font-size: 25px;
   z-index: 100;
+  padding-left: 0.2px;
 }
 .carte .conteneur {
   margin-top: 3rem;
@@ -354,11 +364,11 @@ header .back {
   height: 4px;
   width: 49px;
   background-color: #99e2d0;
-  margin-left: 1.3rem;
+  margin-left: 1.5rem;
 }
 .carte .conteneur h3 {
   font-weight: bold;
-  margin-left: 1.3rem;
+  margin-left: 1.5rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -396,10 +406,10 @@ header .back {
   height: 86px;
   overflow: hidden;
 }
-.carte .conteneur .band .food:active .check {
+.carte .conteneur .band .food:hover .check {
   margin-right: 0;
 }
-.carte .conteneur .band .food:active i {
+.carte .conteneur .band .food:hover i {
   animation-name: turn;
   animation-duration: 1s;
   animation-iteration-count: initial;
@@ -532,6 +542,17 @@ header .back {
     transform: scale(1.1);
     transition: opacity 2s;
   }
+  .welcome h2 {
+    margin-left: 1.5rem;
+  }
+  .menu {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .menu h2 {
+    /* font-weight: bold; */
+    margin-left: 0.5rem;
+  }
   .carte .topic h2 {
     font-size: 26px;
   }
@@ -581,6 +602,16 @@ header .back {
     opacity: 1;
     transform: scale(1.1);
     transition: opacity 2s;
+  }
+  .welcome h2 {
+    margin-left: 1.5rem;
+  }
+  .menu {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .menu h2 {
+    margin-left: 0.5rem;
   }
   .food {
     width: 95% !important;

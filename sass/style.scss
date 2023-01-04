@@ -8,19 +8,31 @@ $cd-secondaire: #FF79DA;
 
 $cd-tertiaire : #99E2D0; 
 
+
+
+
+@keyframes sw {
+    0% { transform: height(0%);}
+
+    50% { transform: height(50%);}
+
+    100% { transform: height(100%); }
+}
+
 .heart{
     font-size: 30px;
     position: relative;
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 4s;
-    &:active .coeurgradient {
+    &:hover .coeurgradient {
         opacity: 1;
         transform :scale(1.1);
         transition: opacity 2s;
+
     }
 
-    &:active .coeurose {
+    &:hover .coeurose {
         opacity: 1;
         transform: scale(1.1);
         transition: opacity 2s;
@@ -43,6 +55,7 @@ $cd-tertiaire : #99E2D0;
     -webkit-text-fill-color: transparent;
     position: relative;
     opacity: 0;
+    transition: all 0.3s linear 0s;
 }
 
 
@@ -130,9 +143,8 @@ body {
     transition-duration: 4ms;
     &:hover {
         transform: scale(1);
-        box-shadow: 8px 8px 11px 12px rgba(0,0,0,0.33);
-        background: linear-gradient(17deg, pink, $cd-primaire);
-
+        box-shadow: 0 0 20px rgb(0 0 0 / 57%);
+        background: linear-gradient(230deg, $cd-secondaire 34%, $cd-primaire 111%);;
     }
 }
 
@@ -223,7 +235,7 @@ header
 
 
     h2{
-        margin-left: 1.5rem;
+        margin-left: 16px;
         margin-top: 2rem;
         font-weight: bold;
     }
@@ -279,14 +291,12 @@ header
 
 .menu{
     background-color: #F2F2F2;
-    padding-right: 15px;
-    padding-left: 15px;
     padding-bottom: 4rem;
     padding-top: 2rem;
 
     h2{
         font-weight: bold;
-        margin-left: 0.5rem
+        margin-left: 16px;
     }
 
 }
@@ -310,7 +320,7 @@ header
 {
     border-radius: 20px;
     height: 250px;
-    width: 97%;
+    width: 90%;
     background-color: white;
     margin-top: 1.5rem;
     box-shadow: 0 0 20px #0000002e;
@@ -343,15 +353,15 @@ header
 
 
         h3{
-            margin-top: 9px;
+            margin-top: 8px;
             margin-left: 13px;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: bold;
         }
 
 
         p{
-            margin-top: -5px;
+            margin-top: -6px;
             margin-left: 13px;
             font-size: 18px;
         }
@@ -455,9 +465,9 @@ header{
         h2{
             font-family: "Shrikhand", cursive;
             margin: 0;
-            font-style: italic;
-            font-size: 24px;
+            font-size: 25px;
             z-index: 100;
+            padding-left: 0.2px;
         }
 
     }
@@ -473,12 +483,12 @@ header{
             height: 4px;
             width: 49px;
             background-color: #99e2d0;
-            margin-left: 1.3rem;
+            margin-left: 1.5rem;
         }
 
         h3{
             font-weight: bold;
-            margin-left: 1.3rem;
+            margin-left: 1.5rem;
             text-transform: uppercase;
             margin-bottom: 10px;
 
@@ -528,11 +538,11 @@ header{
                 height: 86px;
                 overflow: hidden;
 
-                &:active .check{
+                &:hover .check{
                     margin-right: 0;
                 }
 
-                &:active i {
+                &:hover i {
                         
                     animation-name: turn;
                     animation-duration: 1s;
@@ -709,6 +719,7 @@ header{
 
 @media screen and (min-width: 1023px) {
 
+
     .heart{
         
         &:hover .coeurgradient {
@@ -723,6 +734,23 @@ header{
             transition: opacity 2s;
         }
     
+    }
+
+    .welcome{
+        h2{
+            margin-left: 1.5rem;
+        }
+    }
+
+
+    .menu {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        h2 {
+            /* font-weight: bold; */
+            margin-left: 0.5rem;
+        }
     }
 
     .carte{
@@ -789,6 +817,8 @@ header{
 @media screen and (min-width: 768px) and (max-width: 1023px){
 
 
+
+
     .heart{
     
         &:hover .coeurgradient {
@@ -804,6 +834,22 @@ header{
         }
     
     }
+
+    .welcome{
+        h2{
+            margin-left: 1.5rem;
+        }
+    }
+
+    .menu {
+        padding-right: 15px;
+        padding-left: 15px;
+
+        h2 {
+            margin-left: 0.5rem;
+        }
+    }
+
 
     .food{
         width: 95% !important;
