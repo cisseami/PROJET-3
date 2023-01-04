@@ -109,6 +109,11 @@ body {
 }
 
 .propose {
+  margin-right: 6px;
+  margin-left: 5px;
+}
+
+.become {
   margin-right: 5px;
 }
 
@@ -202,7 +207,7 @@ header h1 {
   align-items: center;
 }
 .welcome .act .step {
-  width: 90%;
+  width: 86%;
   height: 65px;
   border-radius: 25px;
   margin-top: 25px;
