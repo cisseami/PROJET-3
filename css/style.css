@@ -13,6 +13,8 @@
 }
 .heart {
   font-size: 30px;
+  height: 33px;
+  width: 33px;
   position: relative;
   transform: scale(1.1);
   transition-property: transform;
@@ -48,15 +50,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
+  top: -35px;
   opacity: 0;
   transition: all 0.3s linear 0s;
 }
 
-.coeurclear {
-  position: relative;
-  left: 37px;
-}
-
+/*
+.coeurclear{
+    position: relative;
+    left: 37px;
+}*/
 /* Coeur Carte */
 .coeursol {
   position: absolute;
@@ -243,12 +246,14 @@ header h1 {
 .menu h2 {
   font-weight: bold;
   margin-left: 16px;
+  margin-bottom: 1.5rem;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 .cards a {
   color: inherit;
@@ -260,7 +265,7 @@ header h1 {
   height: 250px;
   width: 90%;
   background-color: white;
-  margin-top: 1.5rem;
+  /*margin-top: 1.5rem;*/
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
   transition-duration: 0.1s;
   position: relative;
@@ -355,8 +360,8 @@ header .back {
 .carte .topic {
   display: flex;
   justify-content: space-between;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
   padding-top: 3rem;
   margin-bottom: 3rem;
   position: relative;
@@ -366,10 +371,9 @@ header .back {
 .carte .topic h2 {
   font-family: "Shrikhand", cursive;
   margin: 0;
-  font-size: 25px;
+  font-size: 27px;
   z-index: 100;
   padding-left: 0.2px;
-  font-style: oblique;
 }
 .carte .conteneur {
   margin-top: 3rem;
@@ -379,11 +383,11 @@ header .back {
   height: 4px;
   width: 49px;
   background-color: #99e2d0;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 .carte .conteneur h3 {
   font-weight: bold;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -413,7 +417,7 @@ header .back {
   margin-top: 1.5rem;
 }
 .carte .conteneur .band .food {
-  width: 90%;
+  width: 95%;
   display: flex;
   background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.18);
@@ -568,8 +572,12 @@ header .back {
     /* font-weight: bold; */
     margin-left: 0.5rem;
   }
+  .carte .topic {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
   .carte .topic h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
   .carte .conteneur {
     display: flex;
@@ -596,6 +604,7 @@ header .back {
     margin-bottom: 1.5rem !important;
     width: 340px !important;
     height: 250px !important;
+    margin-top: 1.5rem;
   }
   .cards .card img {
     width: 340px !important;
@@ -648,6 +657,7 @@ header .back {
   .cards .card {
     width: 340px !important;
     height: 250px !important;
+    margin-top: 1.5rem;
   }
   .cards .card img {
     width: 340px !important;
@@ -657,8 +667,12 @@ header .back {
     width: 340px !important;
     height: 81.4px !important;
   }
+  .carte .topic {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
   .carte .topic h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
