@@ -379,19 +379,27 @@ header
         justify-content: space-between;
 
 
-        h3{
-            margin-top: 8px;
-            margin-left: 13px;
-            font-size: 19px;
-            font-weight: bold;
+        .place{
+            height: 60px;
+
+            h3{
+                margin-top: 8px;
+                margin-left: 13px;
+                font-size: 19px;
+                font-weight: bold;
+            }
+    
+    
+            p{
+                margin-top: -6px;
+                margin-left: 13px;
+                font-size: 18px;
+            }
+
         }
 
 
-        p{
-            margin-top: -6px;
-            margin-left: 13px;
-            font-size: 18px;
-        }
+        
 
 
 
