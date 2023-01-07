@@ -21,8 +21,8 @@ $cd-tertiaire : #99E2D0;
 
 .heart{
     font-size: 30px;
-    height: 33px;
-    width: 33px;
+    height: 30px;
+    width: 30px;
     position: relative;
     transform: scale(1.1);
     transition-property: transform;
@@ -69,14 +69,6 @@ $cd-tertiaire : #99E2D0;
 }
 
 
-/*
-.coeurclear{
-    position: relative;
-    left: 37px;
-}*/
-
-
-
 /* Coeur Carte */
 
 .coeursol{
@@ -117,10 +109,6 @@ body {
 .purple{
     color: $cd-primaire;
 }
-
-/*.transit{
-    background-color: #E6E6F0;
-}*/
 
 
 .transit{
@@ -345,14 +333,13 @@ header
     height: 250px;
     width: 86%;
     background-color: white;
-    /*margin-top: 1.5rem;*/
     box-shadow: 0 0 20px #0000002e;
     transition-duration: 0.1s;
     position: relative;
 
     
     &:hover{
-        scale: 1.1;
+        transform: scale(1.1);
     }
 
     img{
