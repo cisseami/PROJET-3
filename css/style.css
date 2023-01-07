@@ -548,12 +548,27 @@ header .back {
 }
 /* version desktop*/
 @media screen and (min-width: 1023px) {
-  .heart:hover .coeurgradient {
+  .heart {
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: 1.5s;
+  }
+  .heart:focus .coeurgradient {
+    animation-name: co4;
+    animation-duration: 1.5s;
+    animation-iteration-count: initial;
     opacity: 1;
     transform: scale(1.1);
     transition: opacity 2s;
   }
   .heart:hover .coeurose {
+    animation-name: co4;
+    animation-duration: 1.5s;
+    animation-iteration-count: initial;
     opacity: 1;
     transform: scale(1.1);
     transition: opacity 2s;

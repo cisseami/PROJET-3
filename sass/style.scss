@@ -6,20 +6,26 @@ $cd-primaire : #9356dc;
 
 $cd-secondaire: #FF79DA;
 
-$cd-tertiaire : #99E2D0; 
+$cd-tertiaire : #99E2D0;
 
 
 
 @keyframes co4 {
-    0% { transform: scale(0);}
+    0% {
+        transform: scale(0);
+    }
 
-    50% { transform: scale(0.5);}
+    50% {
+        transform: scale(0.5);
+    }
 
-    100% { transform: scale(1.1); }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 
-.heart{
+.heart {
     font-size: 30px;
     height: 30px;
     width: 30px;
@@ -27,14 +33,14 @@ $cd-tertiaire : #99E2D0;
     transform: scale(1.1);
     transition-property: transform;
     transition-duration: 1.5s;
-    
+
     &:hover .coeurgradient {
         animation-name: co4;
         animation-duration: 1.5s;
         animation-iteration-count: initial;
         opacity: 1;
-        transform : scale(1.1);
-        transition:  opacity 0.5s;
+        transform: scale(1.1);
+        transition: opacity 0.5s;
 
     }
 
@@ -49,16 +55,16 @@ $cd-tertiaire : #99E2D0;
 
 }
 
-.coeuracc{
+.coeuracc {
     margin-top: 20px;
     margin-right: 15px;
 }
 
 /* coeur accueil */
 
-.coeurgradient{
+.coeurgradient {
     color: $cd-secondaire;
-    background-image: -webkit-linear-gradient(270deg, $cd-secondaire 0%, $cd-primaire 100%) ;
+    background-image: -webkit-linear-gradient(270deg, $cd-secondaire 0%, $cd-primaire 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -71,33 +77,31 @@ $cd-tertiaire : #99E2D0;
 
 /* Coeur Carte */
 
-.coeursol{
-    
+.coeursol {
+
     position: absolute;
     padding-top: 2px;
 }
 
-.coeurose{
+.coeurose {
     color: $cd-secondaire;
-    background-image: -webkit-linear-gradient(270deg, $cd-secondaire 0%, $cd-primaire 100%) ;
+    background-image: -webkit-linear-gradient(270deg, $cd-secondaire 0%, $cd-primaire 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
 }
 
-img 
-{
+img {
     object-fit: cover;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-main
-{
+main {
     margin: 0;
 }
 
@@ -106,37 +110,37 @@ body {
 }
 
 
-.purple{
+.purple {
     color: $cd-primaire;
 }
 
 
-.transit{
-    background-color:  #E6E6FA;
+.transit {
+    background-color: #E6E6FA;
 }
 
-.light{
+.light {
     background-color: #F2F2F2;
 }
 
-.white{
+.white {
     background-color: white;
 }
 
 
-.propose{
+.propose {
     margin-right: 6px;
     margin-left: 5px;
 }
 
-.become{
+.become {
     margin-right: 5px;
 }
 
 
 /* Bouton */
 
-.catch{
+.catch {
     height: 55px;
     width: 220px;
     color: white;
@@ -149,10 +153,12 @@ body {
     transform: scale(1);
     transition-property: transform;
     transition-duration: 4ms;
+
     &:hover {
         transform: scale(1);
         box-shadow: 0 0 20px rgb(0 0 0 / 57%);
-        background: linear-gradient(230deg, $cd-secondaire 34%, $cd-primaire 111%);;
+        background: linear-gradient(230deg, $cd-secondaire 34%, $cd-primaire 111%);
+        ;
     }
 }
 
@@ -166,15 +172,14 @@ body {
 
 /* En tete */
 
-header
-{
+header {
     background-color: white;
     height: 70px;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-   
 
 
-    h1{
+
+    h1 {
         font-family: 'Shrikhand', cursive;
         margin: 0;
         text-align: center;
@@ -186,19 +191,18 @@ header
 
 /* Section 1 Localisation */
 
-.location
-{
+.location {
     text-align: center;
     background-color: #F2F2F2;
     height: 30px;
     padding-top: 1rem;
     font-weight: bold;
 
-    i{
+    i {
         padding-right: 1rem;
     }
 
-    .city{
+    .city {
         font-size: 1rem;
     }
 }
@@ -206,12 +210,11 @@ header
 
 /* Section 2 Decouverte */
 
-.discover
-{
+.discover {
     background-color: #fafafa;
     text-align: center;
-    
-    h2{
+
+    h2 {
         margin: 0;
         font-weight: bold;
         padding-top: 2rem;
@@ -220,7 +223,7 @@ header
         font-size: 28px;
     }
 
-    p{
+    p {
         text-align: center;
         margin-right: 1rem;
         margin-left: 1rem;
@@ -234,27 +237,26 @@ header
 
 /* Section 3 Fonctionnement */
 
-.welcome
-{
+.welcome {
     width: 100%;
     height: auto;
     margin-top: 3rem;
     margin-bottom: 4rem;
 
 
-    h2{
+    h2 {
         margin-left: 28px;
         margin-top: 2rem;
         font-weight: bold;
     }
 
 
-    .act{
+    .act {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        .step{
+        .step {
             width: 86%;
             height: 65px;
             border-radius: 25px;
@@ -264,7 +266,7 @@ header
 
 
 
-            .number{
+            .number {
                 background-color: $cd-primaire;
                 color: white;
                 height: 20px;
@@ -276,13 +278,13 @@ header
             }
 
 
-            i{
+            i {
                 margin-left: 2rem;
                 margin-top: 25px;
             }
 
 
-            p{
+            p {
                 margin-left: 2rem;
                 margin-top: 25px;
                 font-weight: bold;
@@ -297,14 +299,14 @@ header
 
 /* Section Restaurants */
 
-.menu{
+.menu {
     background-color: #F2F2F2;
     padding-bottom: 4rem;
     padding-top: 2rem;
 
-    h2{
+    h2 {
         font-weight: bold;
-        margin-left:  28px;
+        margin-left: 28px;
         margin-bottom: 2.5rem;
     }
 
@@ -312,23 +314,21 @@ header
 
 
 
-.cards 
-{
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
 
-    a{
+    a {
         color: inherit;
         text-decoration: none;
-        
+
     }
 }
 
 
-.card
-{
+.card {
     border-radius: 20px;
     height: 250px;
     width: 86%;
@@ -337,19 +337,19 @@ header
     transition-duration: 0.1s;
     position: relative;
 
-    
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
 
-    img{
+    img {
         border-radius: 20px 20px 0 0;
         object-fit: cover;
         width: 100%;
         height: 175px;
     }
 
-    .badgeNew{
+    .badgeNew {
         color: #3b8468;
         background-color: #a9e0d1;
         font-weight: 500;
@@ -362,23 +362,23 @@ header
         padding-top: 9px;
     }
 
-    .describ{
+    .describ {
         display: flex;
         justify-content: space-between;
 
 
-        .place{
+        .place {
             height: 60px;
 
-            h3{
+            h3 {
                 margin-top: 8px;
                 margin-left: 13px;
                 font-size: 19px;
                 font-weight: bold;
             }
-    
-    
-            p{
+
+
+            p {
                 margin-top: -6px;
                 margin-left: 13px;
                 font-size: 18px;
@@ -387,44 +387,43 @@ header
         }
 
 
-        
+
 
 
 
     }
 
 
-    
+
 }
 
 
 
 /* Section Pied de page */
 
-footer
-{
-    background-color:  #353535;
+footer {
+    background-color: #353535;
     color: white;
     padding-left: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 1rem;
 
-    h3{
+    h3 {
         font-family: 'Shrikhand', cursive;
         font-weight: normal;
     }
 
-    ul{
+    ul {
         list-style-type: none;
         padding: 0;
         margin: 0;
 
-        li{
+        li {
             padding-bottom: 5px;
         }
 
 
-        a{
+        a {
             color: inherit;
             text-decoration: none;
         }
@@ -439,8 +438,8 @@ footer
 
 /* En tete */
 
-header{
-    .back{
+header {
+    .back {
         position: absolute;
         left: 1.5rem;
         top: 1.4rem;
@@ -452,7 +451,7 @@ header{
 /* Section Image */
 
 
-.meetpic{
+.meetpic {
     width: 100%;
     height: 270px;
     object-fit: cover;
@@ -466,14 +465,14 @@ header{
 
 /* Section carte */
 
-.carte{
+.carte {
     background-color: #F2F2F2;
     border-radius: 30px 30px 0 0;
 
 
     /* Entete Carte */
 
-    .topic{
+    .topic {
         display: flex;
         justify-content: space-between;
         margin-right: 1rem;
@@ -485,7 +484,7 @@ header{
         margin-top: -4rem;
 
 
-        h2{
+        h2 {
             font-family: "Shrikhand", cursive;
             margin: 0;
             font-size: 26px;
@@ -494,52 +493,52 @@ header{
         }
 
     }
-    
-    
+
+
     /* Menu carte */
 
-    .conteneur{
+    .conteneur {
         margin-top: 3rem;
 
 
-        .line{
+        .line {
             height: 4px;
             width: 49px;
             background-color: #99e2d0;
             margin-left: 1rem;
         }
 
-        h3{
+        h3 {
             font-weight: bold;
             margin-left: 1rem;
             text-transform: uppercase;
             margin-bottom: 10px;
 
         }
-        
+
 
         /* Animation d'apparition */
-        .band1{
+        .band1 {
             animation-name: co1;
             animation-duration: 1s;
             animation-iteration-count: initial;
 
         }
 
-        .band2{
+        .band2 {
             animation-name: co1;
             animation-duration: 2s;
             animation-iteration-count: initial;
         }
 
-        .band3{
+        .band3 {
             animation-name: co1;
             animation-duration: 3s;
             animation-iteration-count: initial;
         }
 
 
-        .band{
+        .band {
             height: auto;
             margin-bottom: 2rem;
             display: flex;
@@ -548,10 +547,10 @@ header{
             align-items: center;
             gap: 1.5rem;
             margin-top: 1.5rem;
-            
 
 
-            .food{
+
+            .food {
 
                 width: 95%;
                 display: flex;
@@ -561,21 +560,21 @@ header{
                 height: 86px;
                 overflow: hidden;
 
-                &:hover .check{
+                &:hover .check {
                     margin-right: 0;
                 }
 
                 &:hover i {
-                        
+
                     animation-name: turn;
                     animation-duration: 1s;
                     animation-iteration-count: initial;
                 }
 
-               
 
 
-                .titre{
+
+                .titre {
                     width: 55%;
                     display: flex;
                     flex-direction: column;
@@ -585,9 +584,9 @@ header{
                     white-space: nowrap;
                     text-overflow: ellipsis;
                     overflow: hidden;
-                    
-                    h4{
-                        
+
+                    h4 {
+
                         margin: 0;
                         font-size: 17px;
                         padding-top: 5px;
@@ -597,9 +596,9 @@ header{
                         overflow: hidden;
                         padding-left: 1rem;
                     }
-    
-                    p{
-                        
+
+                    p {
+
                         margin: 0;
                         display: block;
                         white-space: nowrap;
@@ -607,13 +606,13 @@ header{
                         overflow: hidden;
                         font-size: 16px;
                         padding-left: 1rem;
-                        
-                    }
-    
-                    
-                } 
 
-                span{
+                    }
+
+
+                }
+
+                span {
                     font-weight: 600;
                     font-size: 16px;
                     padding-top: 42px;
@@ -623,10 +622,10 @@ header{
                     display: flex;
                     justify-content: center;
                 }
-                    
-    
-    
-                .check{
+
+
+
+                .check {
                     height: 100%;
                     width: 80px;
                     background-color: $cd-tertiaire;
@@ -638,8 +637,8 @@ header{
                     transition: margin-right 0.5s;
 
 
-                    i{
-                        
+                    i {
+
                         color: $cd-tertiaire;
                         background-color: white;
                         border-radius: 75px;
@@ -654,15 +653,15 @@ header{
 
             }
 
-        } 
-        
+        }
 
-    } 
-    
+
+    }
+
 
     /* Boutton Commander */
 
-    .order{
+    .order {
         display: flex;
         justify-content: center;
     }
@@ -673,11 +672,17 @@ header{
 
 
 @keyframes co1 {
-    0% { transform: scale(0);}
+    0% {
+        transform: scale(0);
+    }
 
-    50% { transform: scale(0.5);}
+    50% {
+        transform: scale(0.5);
+    }
 
-    100% { transform: scale(1); }
+    100% {
+        transform: scale(1);
+    }
 }
 
 
@@ -685,7 +690,7 @@ header{
 
 /* Loader spinner */
 
-.loader{
+.loader {
     height: 100vh;
     width: 100%;
     background-color: white;
@@ -696,11 +701,11 @@ header{
     inset: 0;
     z-index: 1;
     opacity: 0.9;
-    animation: loading 3s ;
+    animation: loading 3s;
     animation-fill-mode: forwards;
 
 
-    .spinner{
+    .spinner {
         height: 100px;
         width: 100px;
         border-radius: 75px;
@@ -708,17 +713,17 @@ header{
         border-bottom-color: $cd-primaire;
         border-top-color: $cd-tertiaire;
         animation: turn 1S linear infinite;
-        
+
     }
 }
 
 
-@keyframes loading{
+@keyframes loading {
     0% {
         transform: scale(1);
     }
 
-    99%{
+    99% {
         transform: scale(1);
     }
 
@@ -743,24 +748,37 @@ header{
 @media screen and (min-width: 1023px) {
 
 
-    .heart{
-        
+    .heart {
+        font-size: 30px;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        transform: scale(1.1);
+        transition-property: transform;
+        transition-duration: 1.5s;
+
         &:hover .coeurgradient {
-            opacity: 1;
-            transform :scale(1.1);
-            transition: opacity 2s;
-        }
-    
-        &:hover .coeurose {
+            animation-name: co4;
+            animation-duration: 1.5s;
+            animation-iteration-count: initial;
             opacity: 1;
             transform: scale(1.1);
             transition: opacity 2s;
         }
-    
+
+        &:hover .coeurose {
+            animation-name: co4;
+            animation-duration: 1.5s;
+            animation-iteration-count: initial;
+            opacity: 1;
+            transform: scale(1.1);
+            transition: opacity 2s;
+        }
+
     }
 
-    .welcome{
-        h2{
+    .welcome {
+        h2 {
             margin-left: 1.5rem;
         }
     }
@@ -776,13 +794,14 @@ header{
         }
     }
 
-    .carte{
+    .carte {
 
-        .topic{
+        .topic {
 
             margin-right: 1.5rem;
             margin-left: 1.5rem;
-            h2{
+
+            h2 {
                 font-size: 28px;
             }
         }
@@ -791,22 +810,22 @@ header{
             display: flex;
             justify-content: space-around;
 
-            .food{
+            .food {
                 width: 319px !important;
 
-                &:hover .check{
+                &:hover .check {
                     margin-right: 0 !important;
                 }
 
                 &:hover i {
-                        
+
                     animation-name: turn !important;
                     animation-duration: 1s !important;
                     animation-iteration-count: initial !important;
                 }
             }
 
-        
+
         }
     }
 
@@ -817,18 +836,18 @@ header{
         justify-content: space-around !important;
 
 
-        .card{
+        .card {
             margin-bottom: 1.5rem !important;
             width: 340px !important;
             height: 250px !important;
             margin-top: 1.5rem;
 
-            img{
+            img {
                 width: 340px !important;
                 height: 175px !important;
             }
 
-            .describ{
+            .describ {
                 width: 340px !important;
                 height: 81.4px !important;
             }
@@ -841,29 +860,29 @@ header{
 
 /* Version tablette*/
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
 
 
 
-    .heart{
-    
+    .heart {
+
         &:hover .coeurgradient {
             opacity: 1;
-            transform :scale(1.1);
+            transform: scale(1.1);
             transition: opacity 2s;
         }
-    
+
         &:hover .coeurose {
             opacity: 1;
             transform: scale(1.1);
             transition: opacity 2s;
         }
-    
+
     }
 
-    .welcome{
-        h2{
+    .welcome {
+        h2 {
             margin-left: 1.5rem;
         }
     }
@@ -878,15 +897,15 @@ header{
     }
 
 
-    .food{
+    .food {
         width: 95% !important;
 
-        &:hover .check{
+        &:hover .check {
             margin-right: 0 !important;
         }
 
         &:hover i {
-                
+
             animation-name: turn !important;
             animation-duration: 1s !important;
             animation-iteration-count: initial !important;
@@ -900,17 +919,17 @@ header{
         justify-content: space-around;
 
 
-        .card{
+        .card {
             width: 340px !important;
             height: 250px !important;
             margin-top: 1.5rem;
 
-            img{
+            img {
                 width: 340px !important;
                 height: 175px !important;
             }
 
-            .describ{
+            .describ {
                 width: 340px !important;
                 height: 81.4px !important;
             }
@@ -921,11 +940,12 @@ header{
 
 
 
-    .carte{
-        .topic{
+    .carte {
+        .topic {
             margin-right: 1.5rem;
             margin-left: 1.5rem;
-            h2{
+
+            h2 {
                 font-size: 28px;
             }
         }
