@@ -20,7 +20,7 @@
   transition-property: transform;
   transition-duration: 1.5s;
 }
-.heart:active .coeurgradient {
+.heart:hover .coeurgradient {
   animation-name: co4;
   animation-duration: 1.5s;
   animation-iteration-count: initial;
