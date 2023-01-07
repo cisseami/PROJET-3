@@ -20,7 +20,7 @@
   transition-property: transform;
   transition-duration: 1.5s;
 }
-.heart:hover .coeurgradient {
+.heart:active .coeurgradient {
   animation-name: co4;
   animation-duration: 1.5s;
   animation-iteration-count: initial;
@@ -557,7 +557,7 @@ header .back {
     transition-property: transform;
     transition-duration: 1.5s;
   }
-  .heart:focus .coeurgradient {
+  .heart:hover .coeurgradient {
     animation-name: co4;
     animation-duration: 1.5s;
     animation-iteration-count: initial;
