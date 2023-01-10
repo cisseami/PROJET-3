@@ -261,10 +261,9 @@ header h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
   transition-duration: 0.1s;
   position: relative;
-  /*
-      &:hover {
-          transform: scale(1.1);
-      }*/
+}
+.card:hover {
+  transform: scale(1.1);
 }
 .card img {
   border-radius: 20px 20px 0 0;
