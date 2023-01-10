@@ -49,8 +49,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
-  top: -35px;
+  position: absolute;
+  /*top: -35px;*/
+  right: 0;
   opacity: 0;
   transition: all 0.3s linear 0s;
 }
@@ -260,9 +261,10 @@ header h1 {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1803921569);
   transition-duration: 0.1s;
   position: relative;
-}
-.card:hover {
-  transform: scale(1.1);
+  /*
+      &:hover {
+          transform: scale(1.1);
+      }*/
 }
 .card img {
   border-radius: 20px 20px 0 0;
